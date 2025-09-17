@@ -3,11 +3,11 @@ from email.mime.text import MIMEText
 
 # List of students with parent emails
 students = {
-    "Nayeem": "shaiknayeem6300@gmail.com",
-    "Zaffu": "zaffu0903@gmail.com",
-    "Rafi": "shaikrafee1974@gmail.com",
-    "Thameem": "sthameemansari9@gmail.com",
-    "Ramya": "shaiknayeem6300@gmail.com"
+    "Nayeem": "asd@gmail.com",
+    "Zaffu": "lkj@gmail.com",
+    "Rafi": "zxc@gmail.com",
+    "Thameem": "qwe@gmail.com",
+    "Shaik": "abc@gmail.com"
 }
 
 # Attendance status for today (manually enter)
@@ -20,8 +20,8 @@ attendance = {
 }
 
 # Email credentials
-EMAIL = "shaiknayeem6300@gmail.com"
-PASSWORD = "nrlh itnj uiws xexg"  # Use Gmail app password here
+EMAIL = "asdf@gmail.com"
+PASSWORD = "nrlh itnj uiws qwrt"  # Use Gmail app password here
 
 def send_email(to_email, student_name):
     subject = "Absent Alert"
@@ -41,4 +41,5 @@ for student, status in attendance.items():
     if status == "A":
         parent_email = students[student]
         send_email(parent_email, student)
+
 
